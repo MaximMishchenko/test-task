@@ -37,7 +37,6 @@ angular.module('app', [])
             }
 
         this.removeUser = function(id){
-            console.log(id);
             $http.post('php/deleteUser.php?id=' + id)
                 .then(
                     function(){
@@ -47,7 +46,6 @@ angular.module('app', [])
         }   
 
         this.editData = function(data){
-            console.log(data);
             self.id = data.id
             self.isVisible = true;
             self.firstName = data.first_name;
@@ -62,7 +60,6 @@ angular.module('app', [])
                 secondName: self.secondName,
                 email: self.email,
             }
-            console.log(updateData);
             $http.post('php/updateUser.php', updateData)
                 .then(
                     function(){
