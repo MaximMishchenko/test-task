@@ -1,0 +1,12 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+form{
+    margin: 20px;
+    width: 300px;
+}
+
+input{
+    margin-bottom: 20px;
+}
